@@ -34,9 +34,6 @@ read branch
 
 # Finally, push the commit to our "$branch".
 git push origin $branch
-
-# Display the result from Git (error/success).
-read
 ```
 
 Standard, this script will not get executable permissions, so we run:
