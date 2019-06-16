@@ -7,6 +7,7 @@ draft: false
 ## Setting up a Hugo blog with Github and Netlify
 
 In this post I'll go over the general steps to take to set up a [Hugo](https://gohugo.io/) blog with [Github](https://github.com/) , set up DNS and host it with [Netlify](https://www.netlify.com/).
+<!--more-->
 ### Hugo
 Hugo is a **static site generator**. This means that Hugo builds a website off of two things, your posts and the theme you selected for your website.
 With these two things, it generates a **static website**,  which means that the web pages you see are exactly the ones that are stored on the server. Opposed to dynamic websites, which are generated the moment they are requested, static pages have much faster loading times.
