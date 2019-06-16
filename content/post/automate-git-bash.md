@@ -1,6 +1,7 @@
 ---
-title = "Automating Git with Bash"
-date = 2019-06-16
+title: "Automating Git with Bash"
+date: 2019-06-16T17:55:17+02:00
+draft: false
 ---
 I've been working with Git for this website more and more and after a time the "git commit" and "git push" gets a bit tedious(especially for small changes). Since we, sysadmins, like to automate things, it didn't take long to find a way to do just that.
 
@@ -17,7 +18,7 @@ $ vim ~/bin/autogit.sh
 ```
 
 Then we add the following code to the file and save it:
-```
+```bash
 # Stage all changes, modifications, new files and deletions. Use "git add ." or "git add -u" when applicable.
 git add -A
 
