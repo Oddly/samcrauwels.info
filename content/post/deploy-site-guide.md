@@ -17,3 +17,4 @@ We will store the code for our website here.
 ### Netlify
 With Netlify you can build, deploy and serve your sites and web apps. We are going to use Netlify to build the website from our Github repository using Hugo and serve it on our domain.
 
+
