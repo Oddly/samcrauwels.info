@@ -3,7 +3,6 @@ body {
     margin: auto;
     max-width: 50em;
 }
-
 #page-title {
     text-align: center;
 }
@@ -11,6 +10,7 @@ body {
 #page-title h1 a {
     color: black;
     font-size: 2.7rem;
+    font-family: 'Ubuntu mono', monospace;
 }
 
 .post a {
@@ -21,10 +21,12 @@ body {
   color: black;
   font-weight: normal;
   font-size: small;
+  font-family: 'Ubuntu mono', monospace;
 }
 
 #page-title a:hover, .post a:hover {
     text-decoration: underline;
+    text-decoration-color:darkorange;
 }
 
 .date-time-title {
@@ -80,4 +82,8 @@ pre {
 
 footer  {
   text-align: center;
+  color: black;
+}
+footer a {
+  color: black;
 }
