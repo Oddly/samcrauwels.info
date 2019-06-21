@@ -41,18 +41,18 @@ Standard, this script will not get executable permissions, so we run:
 `$ chmod +x ~/bin/autogit.sh`
 
 Now our file should run when we execute it. Our next step is to set up an alias.
-Bash aliases should go in the **~/.bash_aliases** file, so we open/make it.
+Bash aliases should go in the **~/.bash_aliases** file, so we open/make it.  
 `$ vim ~/.bash_aliases`
 
-We add the following and save it:
+We add the following and save it:  
 `alias gitcp='bash ~/bin/autogit.sh'`
 
-To effectively use this alias, we have to read in the alias, by sourcing the **~/.bash_aliases** file.
-`$ source ~/.bashrc`
-> Are you wondering why we source **~/.bashrc** and not **~/.bash_aliases**? This is because **~/.bashrc** contains a reference to **~/.bash_aliases** and loads this file as well.
+To effectively use this alias, we have to read in the alias, by sourcing the **~/.bash_aliases** file.  
+`$ source ~/.bashrc`  
 
+> Are you wondering why we source **~/.bashrc** and not **~/.bash_aliases**? This is because **~/.bashrc** contains a reference to **~/.bash_aliases** and loads this file as well.  
 After this, we should see our alias displayed when we run the **alias** command.
-```
+```bash
 $ alias
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
