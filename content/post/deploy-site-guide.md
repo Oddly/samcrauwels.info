@@ -1,7 +1,7 @@
 ---
 title: "Setting up a blog in Hugo with Github and Netlify"
 date: 2019-06-16T17:55:17+02:00
-draft: false
+draft: true
 ---
 
 ## Setting up a Hugo blog with Github and Netlify
