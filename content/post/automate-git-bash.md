@@ -7,12 +7,12 @@ I've been working with Git for this website more and more and after a time the "
 
 This answer was inspired by [this answer](https://stackoverflow.com/questions/16709404/how-to-automate-the-commit-and-push-process-git) on Stackoverflow.
 
-> Note. this guide is for systems with Bash. To make this work with other shells, you will have to set the alias in a different file.
+>Note. this guide is for systems with Bash. To make this work with other shells, you will have to set the alias in a different file.
 
 The idea is to make a Bash shell script that will be run by an alias defined in the **~/.bash_aliases** file.
 
-First we create the directory and open the file:
-```
+First we have create a directory and open the file:
+```bash
 $ mkdir ~/bin/
 $ vim ~/bin/autogit.sh
 ```
@@ -37,20 +37,20 @@ read branch
 git push origin $branch
 ```
 
-Standard, this script will not get executable permissions, so we run:
+Standard, this script will not get executable permissions, so we run:  
 `$ chmod +x ~/bin/autogit.sh`
 
 Now our file should run when we execute it. Our next step is to set up an alias.
-Bash aliases should go in the **~/.bash_aliases** file, so we open/make it.  
+Bash aliases should go in the **~/.bash_aliases** file, so we open/make it:  
 `$ vim ~/.bash_aliases`
 
 We add the following and save it:  
 `alias gitcp='bash ~/bin/autogit.sh'`
 
-To effectively use this alias, we have to read in the alias, by sourcing the **~/.bash_aliases** file.  
+To effectively use this alias, we have to read in the alias, by sourcing the **~/.bash_aliases** file:  
 `$ source ~/.bashrc`  
 
-> Are you wondering why we source **~/.bashrc** and not **~/.bash_aliases**? This is because **~/.bashrc** contains a reference to **~/.bash_aliases** and loads this file as well.  
+>Are you wondering why we source **~/.bashrc** and not **~/.bash_aliases**? This is because **~/.bashrc** contains a reference to **~/.bash_aliases** and loads this file as well.  
 After this, we should see our alias displayed when we run the **alias** command.
 ```bash
 $ alias
