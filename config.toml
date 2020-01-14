@@ -1,7 +1,7 @@
 baseURL = ""
 languageCode = "en-us"
 title = "Another sysadmin blog"
-theme = "basics"
+theme = "even"
 
 [params]
 author = "Sam Crauwels"
