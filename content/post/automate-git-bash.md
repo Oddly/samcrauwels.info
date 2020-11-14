@@ -3,11 +3,13 @@ title: "Automating Git with Bash"
 date: 2019-06-16T17:55:17+02:00
 draft: false
 ---
-I've been working with Git for this website more and more and after a time the "git commit" and "git push" gets a bit tedious(especially for small changes). Since we, sysadmins, like to automate things, it didn't take long to find a way to do just that.
+
+
+I've been working with Git more and more and after a time the "git commit" and "git push" gets a bit tedious(especially for small changes). Since I like to automate things, it didn't take long to find a way to do just that.
 
 This answer was inspired by [this post](https://stackoverflow.com/questions/16709404/how-to-automate-the-commit-and-push-process-git) on Stackoverflow.
 
-Note. this guide is for systems with Bash. To make this work with other shells, you will have to set the alias in a different file.
+>Note: This guide is for systems with Bash. To make this work with other shells, you will have to set the alias in a different file and possibly change some other things. YMMV.
 
 The idea is to make a Bash shell script that will be run by an alias defined in the **~/.bash_aliases** file.
 
@@ -53,12 +55,17 @@ $ vim ~/.bash_aliases
 ```
 
 We add the following and save it:  
-`alias gitcp='bash ~/bin/autogit.sh'`
+``` bash
+alias gitcp='bash ~/bin/autogit.sh'
+```
 
 To effectively use this alias, we have to read in the alias, by sourcing the **~/.bash_aliases** file:  
-`$ source ~/.bashrc`  
+``` shell
+$ source ~/.bashrc
+```
 
->Are you wondering why we source **~/.bashrc** and not **~/.bash_aliases**? This is because **~/.bashrc** contains a reference to **~/.bash_aliases** and loads this file as well.  
+
+Are you wondering why we source **~/.bashrc** and not **~/.bash_aliases**? This is because **~/.bashrc** contains a reference to **~/.bash_aliases** and loads this file as well.  
 After this, we should see our alias displayed when we run the **alias** command.
 ```bash
 $ alias
