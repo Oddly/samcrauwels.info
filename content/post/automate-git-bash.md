@@ -30,15 +30,18 @@ read commitmessage
 # Run git commit with "$commitmessage".
 git commit -m "$commitmessage"
 
-# Ask and store name of the branch in "$branch".
-echo 'Enter the name of the branch:'
-read branch
+# Ask and store name of the branch in "$branch"
+# Use the default "main" branch when nothing is specified
+branch="main"
+read -e -i "$branch" -p "Enter the name of the branch:" input
+branch="${input:-$branch}"
 
 # Finally, push the commit to our "$branch".
 git push origin $branch
 ```
 
-Standard, this script will not get executable permissions, so we run:  
+Standard, this script will not get executable permissions, so we run:
+
 ``` shell
 $ chmod +x ~/bin/autogit.sh
 ```
