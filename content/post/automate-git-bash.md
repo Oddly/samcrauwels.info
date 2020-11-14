@@ -5,21 +5,22 @@ draft: false
 ---
 I've been working with Git for this website more and more and after a time the "git commit" and "git push" gets a bit tedious(especially for small changes). Since we, sysadmins, like to automate things, it didn't take long to find a way to do just that.
 
-This answer was inspired by [this answer](https://stackoverflow.com/questions/16709404/how-to-automate-the-commit-and-push-process-git) on Stackoverflow.
+This answer was inspired by [this post](https://stackoverflow.com/questions/16709404/how-to-automate-the-commit-and-push-process-git) on Stackoverflow.
 
->Note. this guide is for systems with Bash. To make this work with other shells, you will have to set the alias in a different file.
+Note. this guide is for systems with Bash. To make this work with other shells, you will have to set the alias in a different file.
 
 The idea is to make a Bash shell script that will be run by an alias defined in the **~/.bash_aliases** file.
 
 First we have create a directory and open the file:
-```bash
-$ mkdir ~/bin/
-$ vim ~/bin/autogit.sh
-```
+  ```bash
+  $ mkdir ~/bin/
+  $ vim ~/bin/autogit.sh
+  ```
 
 Then we add the following code to the file and save it:
 ```bash
-# Stage all changes, modifications, new files and deletions. Use "git add ." or "git add -u" when applicable.
+# Stage all changes, modifications, new files and deletions. 
+# Use "git add ." or "git add -u" when applicable.
 git add -A
 
 # Ask and store commit message in "$commitmessage".
