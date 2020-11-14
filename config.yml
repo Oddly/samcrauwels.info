@@ -1,5 +1,5 @@
 baseURL: "https://samcrauwels.info"
-title: Technologic ramblings 
+title: $ cat life 
 paginate: 5
 theme: hugo-PaperMod
 
@@ -16,7 +16,7 @@ minify:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    title: Technology rambling 
+    title:  
     description: ""
     author: Sam 
     # author: ["Me", "You"] # multiple authors
@@ -31,4 +31,4 @@ params:
     disableSpecial1stPost: false
 
     label:
-        text: "Infrastructure adventures"
+        text: ""
