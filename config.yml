@@ -1,5 +1,5 @@
 baseURL: "https://samcrauwels.info"
-title: "# cat $life"
+title: "> cat $life"
 paginate: 5
 theme: hugo-PaperMod
 
@@ -18,7 +18,7 @@ params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     title:  
     description: ""
-    author: Sam 
+    author: Sam
     # author: ["Me", "You"] # multiple authors
 
     images: "<link or path of image for opengraph, twitter-cards>"

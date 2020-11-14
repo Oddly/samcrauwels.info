@@ -12,10 +12,10 @@ Note. this guide is for systems with Bash. To make this work with other shells, 
 The idea is to make a Bash shell script that will be run by an alias defined in the **~/.bash_aliases** file.
 
 First we have create a directory and open the file:
-  ```bash
-  $ mkdir ~/bin/
-  $ vim ~/bin/autogit.sh
-  ```
+```bash
+$ mkdir ~/bin/
+$ vim ~/bin/autogit.sh
+```
 
 Then we add the following code to the file and save it:
 ```bash
@@ -39,11 +39,15 @@ git push origin $branch
 ```
 
 Standard, this script will not get executable permissions, so we run:  
-`$ chmod +x ~/bin/autogit.sh`
+``` shell
+$ chmod +x ~/bin/autogit.sh
+```
 
 Now our file should run when we execute it. Our next step is to set up an alias.
 Bash aliases should go in the **~/.bash_aliases** file, so we open/make it:  
-`$ vim ~/.bash_aliases`
+``` shell
+$ vim ~/.bash_aliases
+```
 
 We add the following and save it:  
 `alias gitcp='bash ~/bin/autogit.sh'`
