@@ -13,7 +13,7 @@ This answer was inspired by [this post](https://stackoverflow.com/questions/1670
 
 The idea is to make a Bash shell script that will be run by an alias defined in the **~/.bash_aliases** file.
 
-First we have create a directory and open the file:
+First we have to create a directory and open the file:
 ``` shell 
 $ mkdir ~/bin/
 $ vim ~/bin/autogit.sh
