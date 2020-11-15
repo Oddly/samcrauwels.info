@@ -1,5 +1,5 @@
 ---
-title: "Automating Git with Bash"
+title: "Automating Git push/commit"
 date: 2019-06-16T17:55:17+02:00
 draft: false
 ---
@@ -14,13 +14,13 @@ This answer was inspired by [this post](https://stackoverflow.com/questions/1670
 The idea is to make a Bash shell script that will be run by an alias defined in the **~/.bash_aliases** file.
 
 First we have create a directory and open the file:
-```bash
+``` shell 
 $ mkdir ~/bin/
 $ vim ~/bin/autogit.sh
 ```
 
 Then we add the following code to the file and save it:
-```bash
+``` bash
 # Stage all changes, modifications, new files and deletions. 
 # Use "git add ." or "git add -u" when applicable.
 git add -A
