@@ -67,7 +67,7 @@ $ source ~/.bashrc
 
 Are you wondering why we source **~/.bashrc** and not **~/.bash_aliases**? This is because **~/.bashrc** contains a reference to **~/.bash_aliases** and loads this file as well.  
 After this, we should see our alias displayed when we run the **alias** command.
-```bash
+``` shell
 $ alias
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
